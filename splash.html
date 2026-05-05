@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DocuMind AI - Splash Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-secondary-fixed-variant": "#354a4f", "surface-container-low": "#eef5f7", tertiary: "#545d7e", "secondary-fixed": "#d0e6ec", "primary-container": "#0ac4e0", background: "#f4fafc", "inverse-primary": "#3cd8f5", outline: "#6c797d", "outline-variant": "#bbc9cd", "on-background": "#161d1e", "on-error": "#ffffff", "on-secondary-fixed": "#091e23", "on-primary": "#ffffff", "surface-bright": "#f4fafc", surface: "#f4fafc", "on-tertiary": "#ffffff", "on-surface-variant": "#3c494c", "inverse-on-surface": "#ecf2f4", "surface-tint": "#006878", secondary: "#4d6267", "on-tertiary-fixed-variant": "#3c4665", "tertiary-fixed": "#dbe1ff", "tertiary-fixed-dim": "#bcc5eb", "tertiary-container": "#a8b1d6", "surface-variant": "#dde4e5", "on-error-container": "#93000a", "on-secondary-container": "#51666b", "on-primary-fixed-variant": "#004e5b", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "inverse-surface": "#2b3133", "secondary-fixed-dim": "#b4cad0", "primary-fixed-dim": "#3cd8f5", "on-tertiary-fixed": "#101a37", "surface-dim": "#d5dbdd", "on-surface": "#161d1e", "secondary-container": "#cde4e9", "surface-container-high": "#e3e9eb", "primary-fixed": "#a6eeff", "on-primary-container": "#004c58", primary: "#006878", "surface-container": "#e9eff1", "error-container": "#ffdad6", "surface-container-highest": "#dde4e5", "on-tertiary-container": "#3b4463", "on-primary-fixed": "#001f25", error: "#ba1a1a"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"margin-mobile": "16px", base: "4px", lg: "24px", gutter: "16px", xs: "4px", xl: "32px", md: "16px", sm: "8px", "margin-desktop": "24px"}, fontFamily: {"label-lg": ["Roboto"], "title-md": ["Roboto"], "body-lg": ["Roboto"], "body-md": ["Roboto"], "display-lg": ["Roboto"], "headline-lg": ["Roboto"], "label-sm": ["Roboto"], "title-lg": ["Roboto"], "headline-md": ["Roboto"], headline: ["Roboto"], display: ["Roboto"], body: ["Roboto"], label: ["Roboto"]}, fontSize: {"label-lg": ["14px", {lineHeight: "20px", letterSpacing: "0.1px", fontWeight: "500"}], "title-md": ["16px", {lineHeight: "24px", letterSpacing: "0.15px", fontWeight: "500"}], "body-lg": ["16px", {lineHeight: "24px", letterSpacing: "0.5px", fontWeight: "400"}], "body-md": ["14px", {lineHeight: "20px", letterSpacing: "0.25px", fontWeight: "400"}], "display-lg": ["57px", {lineHeight: "64px", letterSpacing: "-0.25px", fontWeight: "400"}], "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "0px", fontWeight: "400"}], "label-sm": ["11px", {lineHeight: "16px", letterSpacing: "0.5px", fontWeight: "500"}], "title-lg": ["22px", {lineHeight: "28px", letterSpacing: "0px", fontWeight: "400"}], "headline-md": ["28px", {lineHeight: "36px", letterSpacing: "0px", fontWeight: "400"}]}}}};</script>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        /* Subbing out animation request for static as per instructions, using a rich static gradient instead */
+        .splash-bg {
+            background: linear-gradient(135deg, #006878 0%, #0ac4e0 100%); /* Integrating requested color with primary brand token */
+        }
+        
+        .m3-spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #ffffff;
+            /* Animation normally goes here, but instructed NO ANIMATIONS */
+            /* animation: spin 1s ease-in-out infinite; */
+            transform: rotate(45deg); /* Static representation of spinner */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background m-0 p-0 h-screen w-full flex flex-col justify-center items-center splash-bg">
+<!-- Splash Content Canvas -->
+<main class="flex flex-col items-center justify-center space-y-12 w-full max-w-md p-8 text-center">
+<!-- App Logo & Wordmark Container -->
+<div class="flex flex-col items-center space-y-6">
+<!-- Logo Image -->
+<div class="w-32 h-32 md:w-40 md:h-40 rounded-xl overflow-hidden shadow-lg bg-surface flex items-center justify-center elevation-2 p-2" style="box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+<img alt="DocuMind AI Logo" class="w-full h-full object-cover rounded-lg" data-alt="A minimalist and modern logo design for an AI application named DocuMind AI. The logo features a stylized combination of a document icon and a glowing digital brain or spark, symbolizing intelligent data processing and Q&amp;A capabilities. The design uses clean lines and a professional aesthetic, rendered primarily in a deep, sophisticated blue (#1565C0) with subtle purple undertones (#6750A4). The background is a clean, light surface, ensuring the logo pops with high contrast and clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_D-d0It9dxs0hFPk0fMi4Y_OziIHVXua_lFSZBr4pJxVB7NmSH1XFrEyuYuQa9kipGeEHvkec1xXUZlKVWn7RLZajcgWxvQ0FMzus-GVApH8yJI-YmNan9brOXaasi5NruloOCNBA3wg-e-uv4DH2NMBsAwUMUSs1aZvl03bXvG8nmXdoI_JKxEAU5ECPsky_eGGt_z1a5DuVncwngsgCO_QF-YPY67BcftPRCb5GFkVT8YkeWz9guR7v_TQVY1nJ5TBIlJQKYoqD"/>
+</div>
+<!-- Wordmark -->
+<h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight font-display drop-shadow-md">
+                DocuMind AI
+            </h1>
+</div>
+<!-- M3 Circular Progress Indicator (Static representation) -->
+<div class="pt-16 flex flex-col items-center space-y-4">
+<div class="m3-spinner shadow-sm"></div>
+<p class="text-white/80 font-medium text-sm tracking-wide font-label uppercase mt-4">Initializing Context...</p>
+</div>
+</main>
+<!-- Suppressed Nav Shells: This is a linear/transactional Splash Screen, Nav/FAB are hidden per instructions -->
+</body></html>

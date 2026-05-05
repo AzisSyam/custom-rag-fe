@@ -1,0 +1,10 @@
+---
+import DashboardLayout from '../layouts/DashboardLayout.astro';
+import { SingleQAChat } from '../components/features/chat/SingleQAChat';
+---
+
+<DashboardLayout title="Chat - DocuMind AI">
+    <div class="h-full">
+        <SingleQAChat client:load />
+    </div>
+</DashboardLayout>

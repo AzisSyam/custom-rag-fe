@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #006878;
+    --color-on-primary: #ffffff;
+    --color-primary-container: #0ac4e0;
+    --color-on-primary-container: #004c58;
+
+    --color-secondary: #4d6267;
+    --color-on-secondary: #ffffff;
+    --color-secondary-container: #cde4e9;
+    --color-on-secondary-container: #51666b;
+
+    --color-tertiary: #545d7e;
+    --color-on-tertiary: #ffffff;
+    --color-tertiary-container: #a8b1d6;
+    --color-on-tertiary-container: #3b4463;
+
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #93000a;
+
+    --color-background: #f4fafc;
+    --color-on-background: #161d1e;
+
+    --color-surface: #f4fafc;
+    --color-on-surface: #161d1e;
+    --color-surface-variant: #dde4e5;
+    --color-on-surface-variant: #3c494c;
+
+    --color-outline: #6c797d;
+    --color-outline-variant: #bbc9cd;
+
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #eef5f7;
+    --color-surface-container: #e9eff1;
+    --color-surface-container-high: #e3e9eb;
+    --color-surface-container-highest: #dde4e5;
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.75rem;
+
+    --font-roboto: "Roboto", sans-serif;
+}
+
+@layer base {
+
+    html,
+    body {
+        @apply m-0 p-0 w-full h-full;
+        background-color: var(--color-background);
+        color: var(--color-on-background);
+        font-family: var(--font-roboto);
+    }
+}
+
+@layer utilities {
+    .elevation-1 {
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .elevation-2 {
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .elevation-3 {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Hide default browser password reveal/clear buttons */
+    input::-ms-reveal,
+    input::-ms-clear {
+        display: none;
+    }
+}

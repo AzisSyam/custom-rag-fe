@@ -1,0 +1,8 @@
+---
+import DashboardLayout from '../../layouts/DashboardLayout.astro';
+import { DocumentsList } from '../../components/features/documents/DocumentsList';
+---
+
+<DashboardLayout title="My Documents">
+    <DocumentsList client:load />
+</DashboardLayout>

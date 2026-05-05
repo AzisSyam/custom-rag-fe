@@ -1,0 +1,37 @@
+---
+import DashboardLayout from '../layouts/DashboardLayout.astro';
+---
+
+<DashboardLayout title="Profile - DocuMind AI">
+    <div className="p-8 max-w-3xl mx-auto">
+        <h1 className="text-3xl font-bold text-on-surface mb-6">Profile Settings</h1>
+        <div className="bg-surface-container-low rounded-3xl p-8 border border-outline-variant elevation-1">
+            <div className="flex items-center gap-6 mb-8">
+                <div className="w-24 h-24 rounded-full bg-primary-container flex items-center justify-center">
+                    <span className="material-symbols-outlined text-5xl text-on-primary-container">person</span>
+                </div>
+                <div>
+                    <h2 className="text-2xl font-semibold text-on-surface">John Doe</h2>
+                    <p className="text-on-surface-variant">Enterprise Analysis Division</p>
+                </div>
+            </div>
+            
+            <div className="space-y-4">
+                <div className="p-4 bg-surface-container rounded-2xl flex items-center justify-between">
+                    <div>
+                        <p className="text-xs text-on-surface-variant font-bold uppercase tracking-wider">Email Address</p>
+                        <p className="text-on-surface font-medium">john.doe@enterprise.com</p>
+                    </div>
+                    <button className="text-primary font-semibold text-sm">Edit</button>
+                </div>
+                <div className="p-4 bg-surface-container rounded-2xl flex items-center justify-between">
+                    <div>
+                        <p className="text-xs text-on-surface-variant font-bold uppercase tracking-wider">Department</p>
+                        <p className="text-on-surface font-medium">Strategic Operations</p>
+                    </div>
+                    <button className="text-primary font-semibold text-sm">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</DashboardLayout>

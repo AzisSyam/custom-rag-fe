@@ -1,0 +1,25 @@
+Buat plan untuk melakukan slicing ulang halamana pada stitch berikut:
+## Project
+Title: DocuMind AI RAG Platform
+ID: 12235912987186487115
+
+## Project
+Title: DocuMind AI RAG Platform
+ID: 12235912987186487115
+
+## Screens:
+1. Documents List Screen - Cyan Theme
+    ID: 5d7780c31023414ab7aaea1be4b682a1
+
+## Screens:
+2. Chat Screen - Cyan Theme
+    ID: 38e006e930de4eab84e0f9252e96f29d## Stitch Instructions
+
+Use a utility like `curl -L` to download the hosted URLs.
+
+Pada bagian sidebar ikuti layout dari screen document list screen. Pada halaman Chat Screen buat hanya untuk satu pertanyaan satu jawaban, ketika pertanyaan diganti maka jawaban ikut terganti. Bukan menampilkan list pertanyaan dan jawaban. Jika ada komponen yang bisa direusabel maka buat komponen tersebut. Hindari menulis ulang komponen yang sama. 
+
+Plan harus bisa dibaca oleh AI agent murah.
+
+
+Buat plan untuk mengambil data dari backend dengen membaca collection dari postman saya pada projek custom RAG API/List All Document. Method, endpoint, response, dan request harus mengikuti dokumentasi dari collection tersebut. Plan harus bisa dibaca oleh junior engineer atau AI agent murah

@@ -1,0 +1,10 @@
+---
+import DashboardLayout from '../../layouts/DashboardLayout.astro';
+import { UploadDocumentForm } from '../../components/features/document/UploadDocumentForm';
+---
+
+<DashboardLayout title="Upload Document">
+    <div class="p-8 flex justify-center">
+        <UploadDocumentForm client:load />
+    </div>
+</DashboardLayout>

@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Card } from '../components/common/Card';
+import { TextField } from '../components/common/TextField';
+import { Button } from '../components/common/Button';
+import { Logo } from '../components/common/Logo';
+import { LoginForm } from '../components/features/auth/LoginForm';
+---
+
+<Layout>
+  <div class="min-h-screen w-full flex items-center justify-center p-4 bg-background">
+    <main class="w-full max-w-[440px] bg-surface rounded-xl shadow-[0_1px_3px_rgba(0,104,120,0.1),0_1px_2px_rgba(0,104,120,0.06)] border border-outline-variant p-8 md:p-10 flex flex-col items-center animate-fade-in-up">
+      <!-- App Logo -->
+      <div class="mb-6">
+        <Logo size="lg" />
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-2xl font-bold text-on-surface mb-8 text-center tracking-tight">Login with your  account</h1>
+
+      <!-- Login Form -->
+      <LoginForm client:load />
+
+      <!-- Register Link -->
+      <div class="mt-8 text-sm text-on-surface-variant">
+        Don't have an account? 
+        <a href="/register" class="text-primary font-medium hover:underline rounded-sm px-1 ml-1">Register</a>
+      </div>
+    </main>
+  </div>
+</Layout>
+
+<style>
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+</style>
